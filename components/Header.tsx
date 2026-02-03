@@ -2,10 +2,16 @@ import NavButton from "@/components/NavButton";
 import {FileIcon, HomeIcon, UserRound, UsersRound} from "lucide-react";
 import Link from "next/link";
 import {ModeToggle} from "@/components/ModeToggle";
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export const Header = () => {
     return(
         <header className={"animate-slide bg-background h-12 p-2 border-b sticky top-0 z-20"}>
+
+
+            <LoginLink>Sign in</LoginLink>
+
+            <RegisterLink>Sign up</RegisterLink>
             <div className={"flex h-8 items-center justify-between w-full"}>
                 <div className={"flex items-center gap-2"}>
                     <NavButton icon={HomeIcon} label={"Home"} href={"/home"} />
