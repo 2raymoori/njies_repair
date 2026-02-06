@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page({ params }: { params: { slug: string } }) {
-    const { slug } = await params
+
 
 
 
